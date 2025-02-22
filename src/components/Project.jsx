@@ -6,24 +6,24 @@ import { ProjectData } from '../ProjectData';
 const Project = () => {
   return (
     ProjectData.map((item,index)=>(
-         <div key={index} className='border border-gray w-[30vw] mx-4 my-4'>
+         <div key={index} className='border border-gray sm:w-[30vw]  mx-4 my-4'>
          <div><img src={item.img} alt="" /></div>
-         <div id="tech" className='border border-s border-gray h-7'>
+         <div id="tech" className='border border-s border-gray '>
             <p className='text-gray  text-center'>
                {item.tech.map((tech, index)=>(
                 <span className='ml-1' key={index}>{tech} </span>
                ))}
                 </p> </div>
-         <div id="info" className='mb-8 w-[28vw] px-4'>
+         <div id="info" className='mb-8 sm:w-[28vw] px-4'>
                 <p className='text-2xl text-white'>{item.title}</p>
             <p className='text-sm text-gray'>{item.description}</p>
          </div>
          <div id='buttons' className='flex gap-2 justify-around mb-3'>
            <a href={item.live_link} target='_blank'>
-            <button className='px-3 py-1 border text-lg border-gray text-primary '>Live <span><BoltOutlinedIcon /></span> </button>
+            <button className='px-3 py-1 border text-lg border-gray text-primary '><span className='hidden sm:inline'>Live</span> <span><BoltOutlinedIcon /></span> </button>
             </a> 
             <a href={item.github_link}  target='_blank'>
-            <button className='px-3 py-1 border text-lg border-primary text-gray flex gap-3 items-center '>Souce Code <span><img src={Github} alt="" /></span> </button>
+            <button className='px-3 py-2 sm:py-1  border text-lg border-primary text-gray flex gap-3 items-center '><span className='hidden sm:inline'>Source Code</span> <span><img src={Github} alt="" /></span> </button>
 
             </a>
          </div>

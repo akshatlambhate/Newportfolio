@@ -1,17 +1,20 @@
 import React from 'react'
 import NavigationRoundedIcon from '@mui/icons-material/NavigationRounded';
 import Project from './Project';
+import { Element } from 'react-scroll';
+
 
 const Projects = () => {
   return (
-    <div className="w-[75vw] m-auto ">
-       <div className='flex justify-between items-start'>
+    <Element name='project'>
+         <div className="w-[75vw] m-auto ">
+       <div className='flex justify-around mt-6 sm:mt-8 items-start '>
         <div className='flex items-center'>
-       <div className=' px-3 py-1 w-fit tracking-wider'><p className='text-2xl text-white border border-black'><span className='text-primary'># </span>Projects </p></div> 
-       <hr className='w-[40vw] text-primary' />
+       <div className=' px-3 py-1 w-fit tracking-wider '><p className='text-xl sm:text-2xl text-white border-none sm:border border-black'><span className='text-primary'># </span>Projects </p></div> 
+       <hr className='w-[40vw] text-primary hidden sm:inline' />
         </div>
         <div className='flex gap-2 mr-2 mt-2'>
-            <p className='text-lg text-white'>View all</p>
+            <p className='text-sm sm:text-lg text-white'>View all</p>
             <div className='rotate-90 text-primary'><NavigationRoundedIcon /></div>
         </div>
         
@@ -20,6 +23,8 @@ const Projects = () => {
         <Project />
         </div>
     </div>
+    </Element>
+   
    
   )
 }

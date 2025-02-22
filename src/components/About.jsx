@@ -1,19 +1,25 @@
 import React from "react";
 import NavigationRoundedIcon from '@mui/icons-material/NavigationRounded';
+import { Link, Element } from 'react-scroll';
+import Lottie from "lottie-react";
+import AboutLottie from '../assets/about_lotte.json'
 
 const About = () => {
+
   return (
-    <div className="">
+
+    <Element name="about-me" >
+  <div className="">
       <div className="flex items-center">
         <div className=" px-3 py-1 w-fit tracking-wider">
-          <p className="text-2xl text-white border border-black">
+          <p className="text-2xl text-white  sm:border mt-10 sm:mt-3 border-black">
             <span className="text-primary"># </span>About Me{" "}
           </p>
         </div>
-        <hr className="w-[40vw] text-primary" />
+        <hr className="sm:w-[40vw] hidden text-primary" />
       </div>
       <div className="flex">
-        <div className="flex-1" id="left">
+        <div className="sm:flex-1 " id="left">
           <p className="text-sm text-gray ml-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi
             praesentium nemo ipsa, nostrum expedita dolore enim obcaecati minima
@@ -33,9 +39,21 @@ const About = () => {
             
           </button>
         </div>
-        <div className="flex-1" id="right"></div>
+        <div className="flex-1" id="right">
+            <div className="sm:flex hidden justify-center items-center">
+            <Lottie 
+	    animationData={AboutLottie}
+        loop={true}
+        autoplay={true}
+        className="w-[500px] h-[300px]"
+      />
+            </div>
+        </div>
       </div>
     </div>
+
+    </Element>
+    
   );
 };
 
