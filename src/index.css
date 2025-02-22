@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+html{
+  background-color: #282C33;
+  font-family: "fira-code-main";
+}
+
+
+@theme {
+  --color-primary: #C778DD;
+  --color-gray: #ABB2BF;
+  --color-bg: #282C33;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+}
+
+
+/* // <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+.fira-code-main {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
