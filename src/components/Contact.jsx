@@ -18,18 +18,26 @@ const Contact = () => {
     </div>
         <hr className="sm:w-[40vw] hidden text-primary" />
       </div>
-      <div className="sm:flex flex-col">
-        <div className="flex-1" id="left">
-          <p className="text-sm text-gray ml-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi
-            praesentium nemo ipsa, nostrum expedita dolore enim obcaecati minima
-            libero consectetur eos repellendus rerum incidunt. In labore
-            quibusdam illo voluptatibus expedita voluptatem animi ipsa fugiat
+      <div className="sm:flex gap-8 justify-around">
+        <div className="flex w-[30vw]" id="left">
+          <p className="text-sm sm:text-lg text-gray ml-5 leading-11">
+          I’d love to connect and discuss potential collaborations, projects, or opportunities. Whether you have a question, an idea, or just want to say hello, feel free to reach out!
+       
+📧 Email: akshatlambhate@gmail.com
+<br />
+📞 Phone: +91-6264078037
+<br />
+🔗 LinkedIn: linkedin.com/in/akshat-lambhate
+<br />
+💻 GitHub: github.com/akshatlambhate
+<br />
+
+Looking forward to hearing from you!
             
           </p>
         </div>
-        <div className="flex-1 " id="right">
-            <div className='w-45 border border-gray sm:ml-20 ml-10 mt-6'>
+        <div className=" " id="right">
+            <div className='w-45  border border-gray sm:ml-20 ml-10 mt-6'>
                 <p className='text-center text-xl text-gray border-b border-gray '>Message me</p>
                 <div className='flex gap-6 px-3 mt-4'>
                     <img src={Github} className='w-6 h-6' alt="" />

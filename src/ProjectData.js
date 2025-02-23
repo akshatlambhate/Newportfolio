@@ -8,7 +8,7 @@ import Linkdin from './assets/project/linkdin-clone.png'
         p_id:1,
         img:Iphone,
         title:'IPhone Website Clone',
-        description:'Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS  Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS  Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS tunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS  Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS  Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS ',
+        description:'Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS  Stunning Iphone 15 Launch website clone with interactive iphone 15 model and responsive interface using ReactJS and Tailwind along with GSap and ThreeJS.',
         tech:['ReactJs','Tailwind','GSAP','ThreeJS'], 
         github_link:'https://github.com/akshatlambhate/iPhone-15-Clone',
         live_link:'https://i-phone-15-clone.vercel.app/',
@@ -40,5 +40,6 @@ import Linkdin from './assets/project/linkdin-clone.png'
         github_link:'',
         live_link:'',
     },
+   
 
  ]

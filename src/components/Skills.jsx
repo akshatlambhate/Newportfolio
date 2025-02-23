@@ -37,8 +37,10 @@ const Skills = () => {
       })
     
   return (
+    
+      <div className='shadow-inner shadow-black'>
     <div className='sm:w-[75vw] m-auto py-10 flex flex-col items-center justify-center' id='skills'>
-        <div className='flex sm:pb-8 mt-6 sm:mt-8 w-full items-start sm:justify-normal justify-center '>
+      <div className='flex sm:pb-8 mt-6 sm:mt-8 w-full items-start sm:justify-normal justify-center '>
         <div className='flex items-center'>
        <div className=' px-3 py-1 w-fit tracking-wider '><p className='text-xl sm:text-2xl text-white border-none sm:border border-black'><span className='text-primary'># </span>Skills </p></div> 
        <hr className='w-[40vw] text-primary hidden sm:inline' />
@@ -78,6 +80,8 @@ const Skills = () => {
 
             </div>
         </div>
+      </div>
+     
     </div>
   )
 }

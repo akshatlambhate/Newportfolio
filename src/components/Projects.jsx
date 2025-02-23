@@ -2,6 +2,7 @@ import React from 'react'
 import NavigationRoundedIcon from '@mui/icons-material/NavigationRounded';
 import Project from './Project';
 import { Element } from 'react-scroll';
+import { Link } from 'react-router';
 
 
 const Projects = () => {
@@ -14,12 +15,12 @@ const Projects = () => {
        <hr className='w-[40vw] text-primary hidden sm:inline' />
         </div>
         <div className='flex gap-2 mr-2 mt-2'>
-            <p className='text-sm sm:text-lg text-white'>View all</p>
+         <Link to='/profile'><p className='text-sm sm:text-lg text-white'>View all</p></Link>   
             <div className='rotate-90 text-primary'><NavigationRoundedIcon /></div>
         </div>
         
     </div>
-           <div className='grid grid-cols-1 sm:grid-cols-2'>
+           <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
         <Project />
         </div>
     </div>

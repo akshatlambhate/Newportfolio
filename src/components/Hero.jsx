@@ -74,7 +74,7 @@ const Hero = () => {
               experiences.
             </p>
             <p className="text-lg text-gray mt-3">
-              hi, I am{" "}
+              Hi, I am{" "}
               <span className="text-primary text-5xl font-semibold">Akshat</span>{" "}
               <span className="text-white text-3xl">Lambhate</span>
             </p>
@@ -82,9 +82,9 @@ const Hero = () => {
             <p className="text-gray">
               <Typewriter
                 words={[
-                  "FrontEnd Developer",
-                  "MERN Developer",
-                  "Full Stack Developer",
+                  "FRONTEND DEVELOPER",
+                  "MERN DEVELOPER",
+                  "FULL STACK DEVEL0PER",
                   "UI / UX ",
                 ]}
                 cursor

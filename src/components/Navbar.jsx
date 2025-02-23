@@ -37,10 +37,12 @@ const Navbar = () => {
       y: 0,
       duration: 0.5,
       scrollTrigger: {
-        trigger: "#hero",
+        trigger: "#hero #projects",
         start: "top 10px", 
         end:'bottom 200px',// Navbar appears after scrolling past hero section
         toggleActions: "play none none reverse",
+
+        start:''
       },
     });
   });
