@@ -7,13 +7,15 @@ import { Element } from 'react-scroll';
 const Contact = () => {
   return (
     <Element name='contact'>
-   <div className='mt-5'>
+   <div className='mt-5 sm:w-[75vw] m-auto '>
            <div className="flex items-center">
-        <div className=" px-3 py-1 w-fit tracking-wider">
-          <p className="text-2xl text-white sm:border border-none border-black">
-            <span className="text-primary"># </span>Contact{" "}
-          </p>
+           <div className='flex sm:pb-8 mt-6 sm:mt-8 w-full items-start sm:justify-normal justify-center '>
+        <div className='flex items-center'>
+       <div className=' px-3 py-1 w-fit tracking-wider '><p className='text-xl sm:text-2xl text-white border-none sm:border border-black'><span className='text-primary'># </span>Contact </p></div> 
+       <hr className='w-[40vw] text-primary hidden sm:inline' />
         </div>
+      
+    </div>
         <hr className="sm:w-[40vw] hidden text-primary" />
       </div>
       <div className="sm:flex flex-col">

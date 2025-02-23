@@ -8,8 +8,8 @@ import Github from '../assets/Github.png'
 const Footer = () => {
   return (
     <div>
-      <div className="sm:flex border-t border-gray mt-5">
-        <div className="flex-1 flex-col mb-5">
+      <div className="sm:flex items-center justify-around gap-20 border-t border-gray mt-5">
+        <div className=" flex-col justify-around py-6 items-center h-[20vh]">
             <div className="flex items-center ">
             <img src={Logo} width={80} alt="" />
                     <p className="text-xl text-white">Akshat Lambhate</p>
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         </div>
         
-        <div className="flex-1 mt-5 sm:ml-5 ">
+        <div className=" mt-5 sm:ml-5 ">
           <p className="text-xl text-gray text-center sm:text-left">Media</p>
           <div className="mt-3 flex gap-4 justify-center sm:justify-normal mb-4" >
             <img src={Linkdin} className="" alt="" />
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-2 text-white pb-10">
+      <div className="text-center mt-2 text-white pb-1 pt-3.5 border-t border-dotted border-gray">
         <p>© Copyright 2025. made by <span className="text-primary">Akshat</span>  Lambhate</p>
       </div>
     </div>

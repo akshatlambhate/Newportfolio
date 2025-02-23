@@ -6,6 +6,9 @@ import Myimg from "../assets/my-img.png";
 import { Element } from "react-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lottie from "lottie-react";
+import HeroBg from '../assets/hero-bg.json'
+import Dots from '../assets/Dots.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,8 +54,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <Element name="hero">
-      <div className="w-[75vw] mx-auto grid grid-cols-1 md:grid-cols-2" id="hero">
+    <Element name="hero" > 
+    <div className="relative overflow-hidden">
+    <div className="sm:flex hidden justify-center items-center w-full">
+            <Lottie 
+	    animationData={HeroBg}
+        loop={true}
+        autoplay={true}
+        className="w-full h-[80vh] absolute top-6 -right-60 opacity-60"
+      />
+            </div>
+
+      <div className="w-[75vw] h-[80vh] items-center mx-auto grid grid-cols-1 md:grid-cols-2" id="hero">
         <div id="hero-left" className="flex-1 flex flex-col gap-10 mt-10 md:mt-0">
           <div className="text-2xl text-white font-semibold leading-12 text-center md:text-left">
             <p>
@@ -84,13 +97,13 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex justify-center md:justify-normal">
-            <button className="border border-primary px-3 py-1 text-white">
+            <button className="border border-primary px-3 py-1 text-white hover:bg-white duration-350 cursor-pointer hover:text-bg">
               Contact me !!
             </button>
           </div>
         </div>
-        <div ref={imgRef} className="flex-1 relative" id="hero-right">
-          <div className="z-auto">
+        <div ref={imgRef} className="flex-1 justify-center relative hidden sm:block ml-20" id="hero-right">
+          <div className="z-0">
             <img src={OutlineImg} className="absolute w-40 opacity-0 sm:opacity-100" alt="" />
           </div>
           <div className="z-[999]" id="hero-img">
@@ -107,6 +120,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* extra elements */}
+      <img src={Dots} id='dots' className='w-20 absolute top-50 -left-7 sm:opacity-90 opacity-0' alt="" />
+      <div  id='box' className='w-20 h-20 border border-gray absolute top-0 -right-10 sm:block sm:opacity-90 opacity-0'><br /></div>
+    </div>
+         
     </Element>
   );
 };

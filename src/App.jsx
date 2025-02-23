@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className='w-[75vw] m-auto'>
+    <div className=''>
       <Navbar/>
       <Hero />
       <Projects />

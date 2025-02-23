@@ -9,10 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
     useGSAP(() => {
         gsap.to('#dots',{
-            rotateZ:270,
+            rotateZ:360,
+            duration:0.5,
           scrollTrigger:{
             trigger:'#skills',
-            scrub:3,   
+            scrub:2, 
+            start:'top 50%'  
           }
         });
         gsap.to('#box',{
@@ -35,12 +37,14 @@ const Skills = () => {
       })
     
   return (
-    <div className='sm:w-[75vw] m-auto' id='skills'>
-        <div className=' flex items-center'>
-       <div className=' px-3 py-1 w-fit tracking-wider'><p className='text-2xl text-white sm:border border-none border-black'><span className='text-primary'># </span>Skills </p></div> 
-       <hr className=' hidden sm:w-[40vw] text-primary' />
-        
+    <div className='sm:w-[75vw] m-auto py-10 flex flex-col items-center justify-center' id='skills'>
+        <div className='flex sm:pb-8 mt-6 sm:mt-8 w-full items-start sm:justify-normal justify-center '>
+        <div className='flex items-center'>
+       <div className=' px-3 py-1 w-fit tracking-wider '><p className='text-xl sm:text-2xl text-white border-none sm:border border-black'><span className='text-primary'># </span>Skills </p></div> 
+       <hr className='w-[40vw] text-primary hidden sm:inline' />
         </div>
+      
+    </div>
         <div className=' grid lg:grid-cols-2 '>
             <div id="left" className=' mt-6 w-[25vw] h-60 relative hidden sm:inline'>
                <div  id='box' className='w-20 h-20 border border-gray absolute top-0 right-5'><br /></div>

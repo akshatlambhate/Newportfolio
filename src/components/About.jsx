@@ -9,13 +9,17 @@ const About = () => {
   return (
 
     <Element name="about-me" >
-  <div className="">
-      <div className="flex items-center">
-        <div className=" px-3 py-1 w-fit tracking-wider">
-          <p className="text-2xl text-white  sm:border mt-10 sm:mt-3 border-black">
-            <span className="text-primary"># </span>About Me{" "}
-          </p>
+   <div className=" bg-black">
+  <div className="sm:w-[75vw] m-auto ">
+   
+    <div className="flex items-center">
+      <div className='flex sm:pb-8 mt-6 sm:mt-8 w-full sm:items-start sm:justify-normal justify-center '>
+        <div className='flex items-center'>
+       <div className=' px-3 py-1 w-fit tracking-wider '><p className='text-xl sm:text-2xl text-white border-none sm:border border-black'><span className='text-primary'># </span>About Me </p></div> 
+       <hr className='w-[40vw] text-primary hidden sm:inline' />
         </div>
+      
+    </div>
         <hr className="sm:w-[40vw] hidden text-primary" />
       </div>
       <div className="flex">
@@ -33,7 +37,7 @@ const About = () => {
             quaerat, ipsum saepe, consequatur odio iure veniam temporibus eum
             error, distinctio unde in.
           </p>
-          <button className="px-3 py-1 border border-primary text-white flex  items-center ml-5 mt-7">
+          <button className="px-3 py-1 border border-primary text-white flex  items-center ml-5 mt-7 cursor-pointer hover:bg-white duration-400 hover:text-primary">
               Read More
             <div className="rotate-90 ml-3 text-primary"><NavigationRoundedIcon /></div>
             
@@ -52,6 +56,8 @@ const About = () => {
       </div>
     </div>
 
+    </div>
+     
     </Element>
     
   );
