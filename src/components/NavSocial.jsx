@@ -25,9 +25,9 @@ const NavSocial = () => {
     <div className='w-fit flex flex-col relative'>
     <hr className='w-40 text-white rotate-90 ' />
     <div className='absolute top-25 left-17.5 flex flex-col gap-4'>
-      <img src={Github} width={22} alt="" className='hover:w-6 cursor-pointer hover:bg-primary rounded-full'  id='img'/>
-    <img src={Linkdin} width={22} className='hover:w-7 cursor-pointer ' alt="" id='img' />
-    <img src={Mail} width={22} alt="" id='img' className='hover:w-6 cursor-pointer ' />
+    <img src={Github} width={22} alt="" className='hover:w-6 cursor-pointer hover:bg-primary rounded-full text-primary'  id='img'/>
+    <img src={Linkdin} width={22} className='hover:w-6 cursor-pointer hover:bg-primary rounded-full' alt="" id='img' />
+    <img src={Mail} width={22} alt="" id='img' className='hover:w-6 cursor-pointer hover:bg-primary ' />
     </div>
     
     </div>

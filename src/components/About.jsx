@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div className="flex">
             <div className="sm:flex-1 " id="left">
-              <p className="text-lg text-gray ml-5">
+              <p className="text-lg text-gray">
                 Hi, I'm Akshat Lambhate, a passionate Software Developer with a
                 strong foundation in full-stack development, Frontend,
                 and Artificial Intelligence. I hold a B.Tech in Computer Science
@@ -56,7 +56,7 @@ const About = () => {
                   animationData={AboutLottie}
                   loop={true}
                   autoplay={true}
-                  className="w-[600px] h-[300px] absolute top-7 left-40"
+                  className="w-[600px] h-[300px] absolute top-7 left-5"
                 />
               </div>
             </div>

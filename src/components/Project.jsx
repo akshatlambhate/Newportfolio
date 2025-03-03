@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
-import Github from '../assets/Github.png'
+import { github } from '../assets/assest';
 import { ProjectData } from '../ProjectData';
 import { useLocation } from 'react-router-dom';
 
@@ -36,7 +36,7 @@ style={{
      <button className='px-3 py-1 border text-lg border-gray rounded-sm text-primary hover:bg-white  hover:shadow-md hover:scale-110 duration-300 ease-in-out hover:shadow-white '><span className='hidden sm:inline'>Live</span> <span><BoltOutlinedIcon /></span> </button>
      </a> 
      <a href={item.github_link}  target='_blank'>
-     <button className='px-3 py-2 rounded-sm sm:py-1  border text-lg border-primary text-gray flex gap-3 items-center hover:bg-primary hover:text-white hover:shadow-md hover:scale-106 duration-300 ease-in-out hover:shadow-primary  group'><span className='hidden sm:inline'>Source Code</span> <span className='rounded-full group-hover:text-white group-hover:bg-white hover:scale-106 duration-300 '><img src={Github} alt="" /></span> </button>
+     <button className='px-3 py-2 rounded-sm sm:py-1  border text-lg border-primary text-gray flex gap-3 items-center hover:bg-primary hover:text-white hover:shadow-md hover:scale-106 duration-300 ease-in-out hover:shadow-primary  group'><span className='hidden sm:inline'>Source Code</span> <span className='rounded-full text-black group-hover:text-white group-hover:bg-white hover:scale-106 duration-300 '><img src={github} width={30} height={30} alt="" /></span> </button>
 
      </a>
   </div>
@@ -69,7 +69,7 @@ style={{
      <button className='px-3 py-1 border text-lg border-gray rounded-sm text-primary hover:bg-white  hover:shadow-md hover:scale-110 duration-300 ease-in-out hover:shadow-white '><span className='hidden sm:inline'>Live</span> <span><BoltOutlinedIcon /></span> </button>
      </a> 
      <a href={item.github_link}  target='_blank'>
-     <button className='px-3 py-2 rounded-sm sm:py-1  border text-lg border-primary text-gray flex gap-3 items-center hover:bg-primary hover:text-white hover:shadow-md hover:scale-106 duration-300 ease-in-out hover:shadow-primary  group'><span className='hidden sm:inline'>Source Code</span> <span className='rounded-full group-hover:text-white group-hover:bg-white hover:scale-106 duration-300 '><img src={Github} alt="" /></span> </button>
+     <button className='px-3 py-2 rounded-sm sm:py-1  border text-lg border-primary text-gray flex gap-3 items-center hover:bg-primary hover:text-white hover:shadow-md hover:scale-106 duration-300 ease-in-out hover:shadow-primary  group'><span className='hidden sm:inline'>Source Code</span> <span className='rounded-full group-hover:text-white group-hover:bg-white hover:scale-106 duration-300 '><img src={github} width={30} height={30} alt="" /></span> </button>
 
      </a>
   </div>

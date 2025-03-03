@@ -6,21 +6,32 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { Routes, Route } from "react-router";
+import { Routes, Route, Link } from "react-router";
 import HomePage from './pages/HomePage'
-import ProfilePage from './pages/ProfilePage'
+import ProfilePage from './pages/ProjectPage'
 import AboutPage from './pages/AboutPage'
+import gsap  from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ProjectPage from './pages/ProjectPage'
 
 const App = () => {
+  
+
   return (
     <div className=''>
       <Navbar/>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/projects' element={<ProjectPage />} />
         <Route path='/about' element={<AboutPage />} />
       </Routes>
       <Footer />
+    
+
+     
+
+        
     </div>
   )
 }

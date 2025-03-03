@@ -18,10 +18,10 @@ const Contact = () => {
     </div>
         <hr className="sm:w-[40vw] hidden text-primary" />
       </div>
-      <div className="sm:flex gap-8 justify-around">
+      <div className="sm:flex  justify-between">
         <div className="flex w-[30vw]" id="left">
-          <p className="text-sm sm:text-lg text-gray ml-5 leading-11">
-          I’d love to connect and discuss potential collaborations, projects, or opportunities. Whether you have a question, an idea, or just want to say hello, feel free to reach out!
+          <p className="text-sm sm:text-lg text-gray leading-8">
+           Whether you have a question, an idea, or just want to say hello, feel free to reach out!
        
 📧 Email: akshatlambhate@gmail.com
 <br />
@@ -29,9 +29,6 @@ const Contact = () => {
 <br />
 🔗 LinkedIn: linkedin.com/in/akshat-lambhate
 <br />
-💻 GitHub: github.com/akshatlambhate
-<br />
-
 Looking forward to hearing from you!
             
           </p>

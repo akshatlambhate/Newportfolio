@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import HeroImg from "../assets/hero-img.png";
 import OutlineImg from "../assets/outline.png";
 import Myimg from "../assets/my-img.png";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lottie from "lottie-react";
@@ -65,13 +65,17 @@ const Hero = () => {
       />
             </div>
 
-      <div className="w-[75vw] h-[80vh] items-center mx-auto grid grid-cols-1 md:grid-cols-2" id="hero">
+      <div className="w-[75vw] md:min-h-screen items-center mx-auto space-x-8 grid grid-cols-1 md:grid-cols-2" id="hero">
         <div id="hero-left" className="flex-1 flex flex-col gap-10 mt-10 md:mt-0">
-          <div className="text-2xl text-white font-semibold leading-12 text-center md:text-left">
+          <div className="text-2xl text-white flex gap-6 flex-col font-semibold leading-12 text-center md:text-left">
             <p>
               Transforming <span className="text-primary">ideas</span> into
               digital <span className="text-primary">Interactive</span>{" "}
               experiences.
+            </p>
+            <p>
+              with the passion <span className="text-primary">of </span> designing,
+              creation <span className="text-primary">& Asthetics</span>
             </p>
             <p className="text-lg text-gray mt-3">
               Hi, I am{" "}
@@ -96,10 +100,14 @@ const Hero = () => {
               />
             </p>
           </div>
+
           <div className="flex justify-center md:justify-normal">
+            <Link to="contact" smooth={true} duration={1000}> 
             <button className="border border-primary px-3 py-1 text-white hover:bg-white duration-350 cursor-pointer hover:text-bg">
               Contact me !!
             </button>
+            
+            </Link>
           </div>
         </div>
         <div ref={imgRef} className="flex-1 justify-center relative hidden sm:block ml-20" id="hero-right">
