@@ -19,7 +19,6 @@ import firebase from '../assets/CodeIgniter.png'
 
 // tools
 
-import github from '../assets/GitHub.png'
 import threejs from '../assets/Three.js.png'
 import typescript from '../assets/TypeScript.png'
 import vite from '../assets/Vite.js.png'
@@ -29,12 +28,15 @@ import Postman from '../assets/Postman.png'
 import MaterialUI from '../assets/Material UI.png'
 import NextJS from '../assets/Next.js.png'
 import Vercel from '../assets/Vercel.png'
+import GithubNew from '../assets/GithubNew.png'
+
+
+
+
+import github from '../assets/Github.png'
 
 
 
 
 
-
-
-
-export { html, css ,github, firebase,javscript,mongodb,nodejs,react,redux,tailwind,threejs,typescript,vite,Express,PostgreSQL,Socket,FastApi,MySql,Figma,Canva,Postman,MaterialUI,NextJS,Vercel}
+export { github, html, css, firebase,javscript,mongodb,nodejs,react,redux,tailwind,threejs,typescript,vite,Express,PostgreSQL,Socket,GithubNew ,FastApi,MySql,Figma,Canva,Postman,MaterialUI,NextJS,Vercel}

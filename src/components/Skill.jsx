@@ -2,7 +2,7 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Canva, Figma, github, javscript, PostgreSQL, Postman, typescript, Vercel, vite , tailwind , html , css, threejs, redux,react,Express,Socket,FastApi, MySql,mongodb, firebase, MaterialUI,NextJS,nodejs } from "../assets/assest";
+import { Canva, Figma, GithubNew, javscript, PostgreSQL, Postman, typescript, Vercel, vite , tailwind , html , css, threejs, redux,react,Express,Socket,FastApi, MySql,mongodb, firebase, MaterialUI,NextJS,nodejs } from "../assets/assest";
 import starBg from "../assets/star-bg.jpg";
 import starBg2 from "../assets/star-bg-2.jpg";
 import starBg3 from "../assets/star-bg-3.jpg";
