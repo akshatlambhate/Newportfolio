@@ -26,24 +26,11 @@ const About = () => {
             <hr className="sm:w-[40vw] hidden text-primary" />
           </div>
           <div className="flex">
-            <div className="sm:flex-1 " id="left">
+            <div className="sm:flex-1 ml-5 " id="left">
               <p className="text-lg text-gray">
-                Hi, I'm Akshat Lambhate, a passionate Software Developer with a
-                strong foundation in full-stack development, Frontend,
-                and Artificial Intelligence. I hold a B.Tech in Computer Science
-                Engineering from Shri Vaishnav Institute of Information
-                Technology, Indore. My journey in technology has been driven by
-                curiosity, problem-solving, and a deep enthusiasm for building
-                impactful solutions. With experience in React, Next.js, MERN
-                Stack, and Machine Learning, I have developed various projects,
-                including an E-Commerce Platform, News Sentiment Analysis
-                Website, and an iPhone Clone with 3D Interactions. I thrive on
-                creating efficient, scalable, and user-friendly applications
-                while continuously exploring new technologies. I am always open
-                to collaborations, new opportunities, and innovative ideas.
-                Let’s connect and build something amazing!
+              Hi, I'm Akshat Lambhate, a Software Developer passionate about full-stack development, frontend, and AI. I hold a B.Tech in Computer Science Engineering from Shri Vaishnav Institute of Information Technology, Indore. Skilled in React, Next.js, MERN Stack, and Machine Learning, I've built projects like an E-Commerce Platform, a News Sentiment Analysis Website, and an iPhone Clone with 3D interactions. I love creating scalable, user-friendly applications and exploring new technologies. Open to collaborations and innovative ideas—let’s connect!
               </p>
-              <button className="px-3 py-1 border border-primary text-white flex  items-center ml-5 mt-7 cursor-pointer hover:bg-white duration-400 hover:text-primary" onClick={()=>navigate('/about')}>
+              <button className="px-3 py-1 border border-primary text-white flex  items-center  mt-7 cursor-pointer hover:bg-white duration-400 hover:text-primary" onClick={()=>navigate('/about')}>
                 Read More
                 <div className="rotate-90 ml-3 text-primary">
                   <NavigationRoundedIcon />

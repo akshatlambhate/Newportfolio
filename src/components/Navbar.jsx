@@ -11,10 +11,13 @@ import Github from '../assets/Github.png'
 import Linkdin from '../assets/linkdin.png'
 import Mail from '../assets/mail.png'
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
-import { Link as RouterLink } from 'react-router';
+import { Link as RouterLink, useLocation } from 'react-router';
 gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
+  const location =  useLocation();
+  const path = location.pathname;
+  console.log(path)
     const [menuShown, setMenuShown] = useState(false);
     useEffect(()=>{
       console.log(menuShown);
@@ -66,10 +69,12 @@ const Navbar = () => {
 
 <div id="stickyNavbar" className=' gap-5 justify-center items-center fixed top-5 border  border-gray rounded-full px-6 py-2 z-[999] shadow-md opacity-0 hidden sm:flex '>
 <ul className='flex gap-3  items-center mb-1'>
- <Link to='hero' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Home</li></Link>
- <Link to='project' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary' > <span className='text-primary'>#</span> Work</li></Link>
- <Link to='contact' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary' > <span className='text-primary'>#</span> Contact</li></Link>
- <Link to='about-me' smooth={true} duration={600} offset={-5}><li className='text-white font-medium cursor-pointer hover:text-primary' > <span className='text-primary'>#</span> About-me</li></Link>
+
+  {path==='/' ?   <Link to='hero' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Home</li></Link>: <RouterLink to='/'><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Home</li></RouterLink>}
+  {path==='/' ?   <Link to='project' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Work</li></Link>: <RouterLink to='/projects'><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Work</li></RouterLink>}
+  {path==='/' ?   <Link to='contact' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Contact</li></Link>: <RouterLink to='/'><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> Contact</li></RouterLink>}
+  {path==='/' ?   <Link to='about-me' smooth={true} duration={600} offset={-5} ><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> About-me</li></Link>: <RouterLink to='/about'><li className='text-white font-medium cursor-pointer hover:text-primary'  > <span className='text-primary'>#</span> About-me</li></RouterLink>}
+
 </ul>
 
 </div>

@@ -64,7 +64,6 @@ const Skill = () => {
       },
     });
 
-
     gsap.from("#tools-skill-box", {
       opacity: 0.4,
       scale: 0.3,
@@ -148,21 +147,22 @@ const Skill = () => {
         {/* frontend Skills */}
         <div className="flex" id="frontend-skills">
           <div
-            className={` relative h-[60vh] bg-[#121212] shadow-lg shadow-primary r w-1/3  flex items-center justify-end text-7xl `}
+            className={` relative h-[55vh] bg-[#121212] shadow-lg shadow-primary r w-1/3  flex items-center justify-end text-7xl `}
             id="frontend-skill-left"
           >
             <h1 className="mr-4 text-white  ">Front End </h1>
           </div>
           <div
-            className=" bg-bg h-[60vh] w-full absolute -z-10 flex items-center justify-center"
+            className=" bg-bg h-[55vh] w-full absolute -z-10 flex items-center justify-center"
             id="Content"
           >
             <div className=" h-[58vh] w-[50vw]">
-              <div className="grid grid-cols-4 my-10 space-y-6  text-center items-center justify-center">
+              <div className="grid grid-cols-5 my-10 space-y-6  text-center items-center justify-center">
                 <img
                   src={starBg}
-                  className="absolute  top-0 right-20  w-full h-[60vh] "
+                  className="absolute  top-0 right-20  w-full h-[55vh] "
                   alt=""
+                    id="star-bg"
                 />
                 <SkillBox label={"JavaScript"} image={javscript} background={'none'} id='front-end-skill-box' />
                 <SkillBox label={"Material UI"} image={MaterialUI} background={'none'} id='front-end-skill-box' />
@@ -178,7 +178,7 @@ const Skill = () => {
           </div>
 
           <div
-            className="h-[60vh] bg-bg w-2/3  flex items-center justify-start text-7xl shadow-lg shadow-primary  "
+            className="h-[55vh] bg-bg w-2/3  flex items-center justify-start text-7xl shadow-lg shadow-primary  "
             id="frontend-skill-right"
             style={{
               backgroundImage:
@@ -191,7 +191,7 @@ const Skill = () => {
         {/* backend Skills */}
         <div className="flex" id="backend-skills">
           <div
-            className={` h-[60vh] bg-bg shadow-lg shadow-primary r w-2/3 flex items-center justify-end text-7xl `}
+            className={` h-[55vh] bg-bg shadow-lg shadow-primary r w-2/3 flex items-center justify-end text-7xl `}
             style={{
               backgroundImage:
                 "repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 2px, transparent 2px, transparent 20px)",
@@ -201,15 +201,16 @@ const Skill = () => {
             <h1 className="mr-4 text-gray ">Backend End </h1>
           </div>
           <div
-            className=" bg-bg h-[60vh] w-full absolute -z-10 flex items-center justify-center"
+            className=" bg-bg h-[55vh] w-full absolute -z-10 flex items-center justify-center"
             id="Content"
           >
             <div className=" h-[58vh] w-[50vw]">
               <div className="grid grid-cols-4 my-10 space-y-6  text-center items-center justify-center">
                 <img
                   src={starBg2}
-                  className="absolute  top-0 right-20  w-full h-[60vh] "
+                  className="absolute  top-0 right-20  w-full h-[55vh] "
                   alt=""
+                    id="star-bg"
                 />
               <SkillBox label={"NodeJS"} image={nodejs} background={'none'} id='backend-skill-box' />
                 <SkillBox label={"Express"} image={Express} background={'white'} id='backend-skill-box' />
@@ -223,7 +224,7 @@ const Skill = () => {
           </div>
 
           <div
-            className="h-[60vh] bg-[#121212] w-1/3 flex items-center justify-start text-7xl shadow-lg shadow-primary relative"
+            className="h-[55vh] bg-[#121212] w-1/3 flex items-center justify-start text-7xl shadow-lg shadow-primary relative"
             id="backend-skill-right"
           >
             <h1 className="ml-4 text-white">Skills</h1>
@@ -235,21 +236,22 @@ const Skill = () => {
 
         <div className="flex" id="tools-skills">
           <div
-            className={` relative h-[60vh] bg-[#121212] shadow-lg shadow-primary r w-1/3  flex items-center justify-end text-7xl `}
+            className={` relative h-[55vh] bg-[#121212] shadow-lg shadow-primary r w-1/3  flex items-center justify-end text-7xl `}
             id="tools-skill-left"
           >
       
             <h1 className="mr-4 text-white  ">Tools &</h1>
           </div>
           <div
-            className=" bg-bg h-[60vh] w-full absolute -z-10 flex items-center justify-center"
+            className=" bg-bg h-[55vh] w-full absolute -z-10 flex items-center justify-center"
             id="Content"
           >
             <div className=" h-[58vh] w-[50vw]">
               <div className="grid grid-cols-4  my-10 space-y-6  text-center items-center justify-center">
                 <img
                   src={starBg3}
-                  className="absolute  top-0 right-20  w-full h-[60vh] "
+                  className="absolute  top-0 right-20  w-full h-[55vh] "
+                  id="star-bg"
                   alt=""
                 />
               <SkillBox label={"Vite"} image={vite} background={'none'} id={'tools-skill-box'} />
@@ -265,7 +267,7 @@ const Skill = () => {
           </div>
 
           <div
-            className="h-[60vh] bg-bg w-2/3  flex items-center justify-start text-7xl shadow-lg shadow-primary  "
+            className="h-[55vh] bg-bg w-2/3  flex items-center justify-start text-7xl shadow-lg shadow-primary  "
             id="tools-skill-right"
             style={{
               backgroundImage:

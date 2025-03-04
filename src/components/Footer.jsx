@@ -7,8 +7,8 @@ import Github from '../assets/Github.png'
 
 const Footer = () => {
   return (
-    <div>
-      <div className="sm:flex items-center justify-around gap-20 border-t border-gray mt-5">
+    <div className="border-t border-gray ">
+      <div className="w-[80vw] mx-auto sm:flex items-center justify-between gap-20 my-5">
         <div className=" flex-col justify-around py-6 items-center h-[20vh]">
             <div className="flex items-center ">
             <img src={Logo} width={80} alt="" />

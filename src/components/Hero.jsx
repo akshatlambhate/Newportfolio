@@ -68,19 +68,17 @@ const Hero = () => {
       <div className="w-[75vw] md:min-h-screen items-center mx-auto space-x-8 grid grid-cols-1 md:grid-cols-2" id="hero">
         <div id="hero-left" className="flex-1 flex flex-col gap-10 mt-10 md:mt-0">
           <div className="text-2xl text-white flex gap-6 flex-col font-semibold leading-12 text-center md:text-left">
+        
             <p>
-              Transforming <span className="text-primary">ideas</span> into
-              digital <span className="text-primary">Interactive</span>{" "}
-              experiences.
+            Passionate <span className="text-primary"> Full-stack</span>   developer
+            creating  <span className="text-primary"> Impactful</span>{" "}
+            digital experiences with <span className="text-primary"> AI</span> and <span className="text-primary">web tech </span>
             </p>
-            <p>
-              with the passion <span className="text-primary">of </span> designing,
-              creation <span className="text-primary">& Asthetics</span>
-            </p>
+           
             <p className="text-lg text-gray mt-3">
-              Hi, I am{" "}
-              <span className="text-primary text-5xl font-semibold">Akshat</span>{" "}
-              <span className="text-white text-3xl">Lambhate</span>
+              Hi, I am &nbsp;
+              <span className="text-primary text-5xl font-semibold"> AKSHAT</span>{" "}
+              <span className="text-white text-3xl"> &nbsp;Lambhate</span>
             </p>
             <p className="text-sm mt-5 text-gray">I have a Proficiency in</p>
             <p className="text-gray">
