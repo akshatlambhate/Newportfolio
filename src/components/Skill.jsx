@@ -7,6 +7,7 @@ import starBg from "../assets/star-bg.jpg";
 import starBg2 from "../assets/star-bg-2.jpg";
 import starBg3 from "../assets/star-bg-3.jpg";
 import SkillBox from "./SkillBox";
+import Title from "./Title";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,20 +21,23 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#frontend-skills",
         scrub: 3,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
+    
+    
+        
       },
     });
 
     gsap.from("#front-end-skill-box", {
-      opacity: 0.4,
-      scale: 0.3,
+      opacity: 0.6,
+      scale: 0.5,
       duration: 0.8,
       scrollTrigger: {
         trigger: "#frontend-skills",
         scrub: 2,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom 50%",
       },
     });
@@ -44,9 +48,10 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#frontend-skills",
         scrub: 2,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
+       
   
       },
     });
@@ -58,8 +63,8 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#tools-skills",
         scrub: 3,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
       },
     });
@@ -71,7 +76,7 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#tools-skills",
         scrub: 2,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom 50%",
       },
     });
@@ -82,8 +87,8 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#tools-skills",
         scrub: 2,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
       },
     });
@@ -96,8 +101,8 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#backend-skills",
         scrub: 3,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
       },
     });
@@ -110,7 +115,7 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#backend-skills",
         scrub: 2,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom 50%",
       },
     });
@@ -121,8 +126,8 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#backend-skills",
         scrub: 2,
-        start: "top 30%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 70%",
         ease:"power2.inOut",
       },
     });
@@ -132,16 +137,7 @@ const Skill = () => {
   });
   return (
     <div className="flex flex-col relative overflow-hidden" id="skills">
-       <div className="flex sm:pb-8 mt-6 sm:mt-8 w-[80vw] mx-auto sm:items-start sm:justify-normal justify-center ">
-              <div className="flex items-center">
-                <div className=" px-3 py-1 w-fit tracking-wider ">
-                  <p className="text-xl sm:text-2xl text-white border-none sm:border border-black">
-                    <span className="text-primary"># </span>Skills{" "}
-                  </p>
-                </div>
-                <hr className="w-[40vw] text-primary hidden sm:inline" />
-              </div>
-            </div>
+        <Title title={'Skill'} />
       {/* Skills Card */}
       <div className="flex flex-col gap-10 my-10">
         {/* frontend Skills */}
@@ -169,6 +165,7 @@ const Skill = () => {
                 <SkillBox label={"NextJS"} image={NextJS} background={'white'} id='front-end-skill-box' />
                 <SkillBox label={"FastApi"} image={FastApi} background={'none'} id='front-end-skill-box' />
                <SkillBox label={"HTML"} image={html} background={'none'} id='front-end-skill-box' />
+               <SkillBox label={"TypeScript"} image={typescript} background={'none'} id={'front-end-skill-box'} />
                 <SkillBox label={"Tailwind"} image={tailwind} background={'none'} id='front-end-skill-box' />
                 <SkillBox label={"CSS"} image={css} background={'none'} id='front-end-skill-box' />
                 <SkillBox label={"React"} image={react} background={'none'} id='front-end-skill-box' />
@@ -256,7 +253,6 @@ const Skill = () => {
                 />
               <SkillBox label={"Vite"} image={vite} background={'none'} id={'tools-skill-box'} />
                 <SkillBox label={"ThreeJS"} image={threejs} background={'white'} id={'tools-skill-box'} />
-                <SkillBox label={"TypeScript"} image={typescript} background={'none'} id={'tools-skill-box'} />
                 <SkillBox label={"Figma"} image={Figma} background={'none'} id={'tools-skill-box'} />
                 <SkillBox label={"Vercel"} image={Vercel} background={'white'} id={'tools-skill-box'} />
                 <SkillBox label={"Postman"} image={Postman} background={'none'} id={'tools-skill-box'} />

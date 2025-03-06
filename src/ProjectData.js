@@ -28,8 +28,8 @@ import Linkdin from './assets/project/linkdin-clone.png'
         title:'FOREVER Clothing Brand',
         description:'A Complete MERN Stack Project With Responsive Admin Panel using ReactJS , JWT Authentication, TailwindCSS, and contextAPI along with the interactive admin panel with the support of Mongo Database',
         tech:['ReactJs','MongoDB','JWT','Tailwind','NodeJS'],
-        github_link:'',
-        live_link:'',
+        github_link:'https://github.com/akshatlambhate/ClothingBrand',
+        live_link:'https://clothing-brand-frontend-lovat.vercel.app',
     },
     {
         p_id:4,

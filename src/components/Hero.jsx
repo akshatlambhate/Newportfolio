@@ -55,80 +55,91 @@ const Hero = () => {
 
   return (
     <Element name="hero" > 
-    <div className="relative overflow-hidden">
-    <div className="sm:flex hidden justify-center items-center w-full">
-            <Lottie 
-	    animationData={HeroBg}
-        loop={true}
-        autoplay={true}
-        className="w-full h-[80vh] absolute top-6 -right-60 opacity-60"
-      />
-            </div>
-
-      <div className="w-[75vw] md:min-h-screen items-center mx-auto space-x-8 grid grid-cols-1 md:grid-cols-2" id="hero">
-        <div id="hero-left" className="flex-1 flex flex-col gap-10 mt-10 md:mt-0">
-          <div className="text-2xl text-white flex gap-6 flex-col font-semibold leading-12 text-center md:text-left">
-        
-            <p>
+    <div className="relative overflow-hidden sm:mt-12">
+   
+      <div className="w-[80vw] md:min-h-[80vh] grid grid-cols-1 sm:grid-cols-2 mx-auto " id="hero">
+        <div id="hero-left" className="flex flex-col items-center justify-between md:mt-0">
+          <div className="text-2xl text-white flex gap-7  flex-col font-semibold my-5 leading-12 text-center md:text-left">
+              <div className="leading-10">
+                 <p>
             Passionate <span className="text-primary"> Full-stack</span>   developer
             creating  <span className="text-primary"> Impactful</span>{" "}
             digital experiences with <span className="text-primary"> AI</span> and <span className="text-primary">web tech </span>
             </p>
-           
-            <p className="text-lg text-gray mt-3">
-              Hi, I am &nbsp;
-              <span className="text-primary text-5xl font-semibold"> AKSHAT</span>{" "}
+              </div>
+              <div>
+
+                <p className="text-lg flex flex-col sm:flex-row items-end gap-2 text-gray mt-3 ">
+             <span className=" "> Hi, I am </span>  {" "}
+              <span className="text-primary text-5xl  font-semibold"> AKSHAT</span>
               <span className="text-white text-3xl"> &nbsp;Lambhate</span>
             </p>
-            <p className="text-sm mt-5 text-gray">I have a Proficiency in</p>
-            <p className="text-gray">
+              </div>
+
+              <div className="leading-10">
+                
+            <p className="text-[18px] mt-5 text-gray">I have a Proficiency in</p>
+            <p className="text-gray hidden sm:block">
               <Typewriter
                 words={[
-                  "FRONTEND DEVELOPER",
-                  "MERN DEVELOPER",
-                  "FULL STACK DEVEL0PER",
+                  "FRONTEND DEVELOPMENT",
+                  "MERN DEVELOPMENT",
+                  "FULL STACK DEVEL0PMENT",
                   "UI / UX ",
                 ]}
                 cursor
                 loop
                 cursorStyle="||"
                 typeSpeed={70}
-                deleteSpeed={50}
+                deleteSpeed={70}
                 delaySpeed={1000}
+              
               />
             </p>
-          </div>
+              </div>
 
-          <div className="flex justify-center md:justify-normal">
+
+            <div className="">
             <Link to="contact" smooth={true} duration={1000}> 
-            <button className="border border-primary px-3 py-1 text-white hover:bg-white duration-350 cursor-pointer hover:text-bg">
+            <button className="border text-xl border-primary px-3 py-1 text-white hover:bg-white cursor-pointer hover:text-bg">
               Contact me !!
             </button>
             
             </Link>
           </div>
+           
+          </div>
+
+         
         </div>
-        <div ref={imgRef} className="flex-1 justify-center relative hidden sm:block ml-20" id="hero-right">
-          <div className="z-0">
-            <img src={OutlineImg} className="absolute w-40 opacity-0 sm:opacity-100" alt="" />
+
+        <div ref={imgRef} className="  sm:flex-col justify-end relative items-center mt-5 " id="hero-right">
+        <div className="sm:flex hidden justify-center items-center">
+            <Lottie 
+           
+	    animationData={HeroBg}
+        loop={true}
+        autoplay={true}
+        className="w-[100%] h-[70vh] absolute -top-20 -right-20 -z-30 opacity-60"
+      />
+            </div>
+
+          <div  className="z-[999] hidden  sm:flex items-center justify-end" id="hero-img">
+            <img  src={HeroImg} width={360} alt="" />
           </div>
-          <div className="z-[999]" id="hero-img">
-            <img src={HeroImg} width={380} alt="" />
-          </div>
-          <div className="z-[999] absolute -top-3 opacity-0 rotate-y-180" id="my-img">
+          <div className="z-[10] absolute -top-3 right-7 opacity-0 rotate-y-180" id="my-img">
             <img src={Myimg} width={340} alt="" />
           </div>
-          <div className="flex  items-center gap-4 mt-2">
-            <div className="w-5 h-5 flex text-center text-white bg-primary"></div>
-            <div className="text-lg text-white flex items-center justify-center">
+          <div className="flex items-center justify-end mr-22 gap-4 mt-5">
+            <div className="text-md text-white hidden sm:flex items-center justify-center">
               <p className="">Hover here to see the glimpse</p>
             </div>
+  
+
+
           </div>
         </div>
       </div>
-      {/* extra elements */}
-      <img src={Dots} id='dots' className='w-20 absolute top-50 -left-7 sm:opacity-90 opacity-0' alt="" />
-      <div  id='box' className='w-20 h-20 border border-gray absolute top-0 -right-10 sm:block sm:opacity-90 opacity-0'><br /></div>
     </div>
          
     </Element>

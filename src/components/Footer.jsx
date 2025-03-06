@@ -9,12 +9,12 @@ const Footer = () => {
   return (
     <div className="border-t border-gray ">
       <div className="w-[80vw] mx-auto sm:flex items-center justify-between gap-20 my-5">
-        <div className=" flex-col justify-around py-6 items-center h-[20vh]">
-            <div className="flex items-center ">
+        <div className=" flex-col items-center justify-center py-6 sm:h-[30vh]">
+            <div className="flex justify-center sm:justify-normal items-center ">
             <img src={Logo} width={80} alt="" />
-                    <p className="text-xl text-white">Akshat Lambhate</p>
+           <p className="text-xl text-white">Akshat Lambhate</p>
             </div>
-          <div className="flex gap-2 items-center ml-5">
+          <div className="flex gap-2 items-center justify-center sm:justify-normal ml-5">
             <img src={Mail} className="w-5 h-3" alt="" />
           <p className="text-gray">akshatlambhate@gmail.com</p>
         </div>
@@ -24,7 +24,7 @@ const Footer = () => {
           <p className="text-xl text-gray text-center sm:text-left">Media</p>
           <div className="mt-3 flex gap-4 justify-center sm:justify-normal mb-4" >
             <img src={Linkdin} className="" alt="" />
-            <img src={Instagram} width={28} className="" alt="" />
+            <img src={Instagram} width={28} className="bg-white rounded-2xl" alt="" />
             <img src={Github} width={28} className="" alt="" />
           </div>
         </div>
