@@ -185,7 +185,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <RouterLink
-            to="https://drive.google.com/file/d/14BSe-eSdQDsZh7iuLJ1g0Lsu9IW_nc2s/view?usp=sharing"
+            to="https://drive.google.com/file/d/1BG22jy8VFv4mtJcSG8pusKFCyEbTaImt/view?usp=sharing"
             target="_blank"
           >
             <button className="text-gray px-3 py-1 mb-1 border border-primary flex items-center cursor-pointer :bg-white duration-400 hover:border-none group hover:bg-white hover:text-bg">

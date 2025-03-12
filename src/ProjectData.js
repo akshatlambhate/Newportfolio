@@ -2,8 +2,27 @@ import Iphone from './assets/project/iphone-clone.png'
 import Spotify from './assets/project/spotify-clone.png'
 import ECommerce from './assets/project/e-commerce.png'
 import Linkdin from './assets/project/linkdin-clone.png'
+import Redbook from './assets/project/Redbook.png'
 
  export const ProjectData =[
+     {
+         p_id:3,
+         img:ECommerce,
+         title:'FOREVER Clothing Brand',
+         description:'ForeverClothing is a full-stack e-commerce platform designed to provide a seamless online shopping experience. Built using the MERN stack, it features secure user authentication with JWT, a robust admin panel for efficient product management, and Stripe integration for smooth and secure payment processing. The platform ensures a responsive and user-friendly interface, enabling both customers and administrators to navigate effortlessly.',
+         tech:['ReactJs','MongoDB','JWT','Tailwind','NodeJS'],
+         github_link:'https://github.com/akshatlambhate/ClothingBrand',
+         live_link:'https://clothing-brand-frontend-lovat.vercel.app',
+     },
+     {
+         p_id:5,
+         img:Redbook,
+         title:'Redbook: AI Powered Finance Tool',
+         description:'RedBook is an advanced AI-driven finance management platform designed to help users track expenses, analyze budgets, and forecast financial trends effortlessly. Built with Next.js, PostgreSQL, Clerk, Arcjet, and Inngest, it leverages artificial intelligence to provide predictive financial insights and optimize portfolio management. The platform features automated receipt scanning, ensuring seamless expense tracking and an enhanced user experience.',
+         tech:['NextJS','Tailwind','Inngest','PostgreSql','Arcjet'], 
+         github_link:'https://github.com/akshatlambhate/iPhone-15-Clone',
+         live_link:'https://i-phone-15-clone.vercel.app/',
+     },
     {
         p_id:1,
         img:Iphone,
@@ -21,15 +40,6 @@ import Linkdin from './assets/project/linkdin-clone.png'
         tech:['HTML','CSS','Javascript','Tailwind'],
         github_link:'',
         live_link:'',
-    },
-    {
-        p_id:3,
-        img:ECommerce,
-        title:'FOREVER Clothing Brand',
-        description:'A Complete MERN Stack Project With Responsive Admin Panel using ReactJS , JWT Authentication, TailwindCSS, and contextAPI along with the interactive admin panel with the support of Mongo Database',
-        tech:['ReactJs','MongoDB','JWT','Tailwind','NodeJS'],
-        github_link:'https://github.com/akshatlambhate/ClothingBrand',
-        live_link:'https://clothing-brand-frontend-lovat.vercel.app',
     },
     {
         p_id:4,
