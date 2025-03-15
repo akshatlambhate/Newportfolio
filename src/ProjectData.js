@@ -2,7 +2,7 @@ import Iphone from './assets/project/iphone-clone.png'
 import Spotify from './assets/project/spotify-clone.png'
 import ECommerce from './assets/project/e-commerce.png'
 import Linkdin from './assets/project/linkdin-clone.png'
-import Redbook from './assets/project/Redbook.png'
+import Redbook from './assets/project/RedBook.png'
 
  export const ProjectData =[
      {

@@ -132,19 +132,28 @@ const Navbar = () => {
         <NavSocial />
       </div>
       <nav className="w-[80vw] relative hidden md:flex gap-10 justify-between items-center mx-auto ">
-        <div id="logo" className="flex items-center">
-          <img
+       
+         <RouterLink to='/'>
+         <div id="logo" className="flex items-center">
+
+           <img
             src={Logo}
             width={100}
             height={60}
+
             
             alt=""
-            className="mt-1"
+            className="mt-1 cursor-pointer"
           />
+
           <p className="text-2xl text-white text-center font-semibold ">
             Akshat Lambhate
           </p>
+
+            
         </div>
+          </RouterLink>
+        
         <div className="flex gap-5 items-center">
           <ul className="flex gap-3 items-center h-12 mb-1">
             <Link to="hero" smooth={true} duration={600}>
